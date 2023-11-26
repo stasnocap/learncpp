@@ -9,5 +9,6 @@ if (MSVC)
 else()
     add_compile_options(-Wall -Wextra -pedantic -Werror)
 endif()
+set(CMAKE_COMPILE_WARNING_AS_ERROR ON)
 
 add_executable(HelloWorld main.cpp)
